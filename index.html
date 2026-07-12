@@ -486,7 +486,7 @@ textarea{resize:vertical;min-height:80px}
   <p class="success-desc">આપની સભ્ય નોંધણી સફળતાપૂર્વક થઈ ગઈ છે.<br>શ્રી લીંબડી જૈન સંઘ પરિવારમાં આપનું સ્વાગત છે.</p>
   <div class="success-id-box">
     <div class="success-id-label">આપનો સભ્ય ID</div>
-    <div class="success-id" id="success-id-val">LIM-0001</div>
+    <div class="success-id" id="success-id-val">LJSMS-0001</div>
   </div>
   <p class="success-desc" style="font-size:var(--text-xs)">ID Card અને સભ્ય ડિરેક્ટરી માટે આ ID સાચવી રાખો.<br>🕉️ જૈ જિનેન્દ્ર</p>
 </div>
@@ -953,11 +953,11 @@ async function submitForm() {
     try {
       const res = await fetch(APPS_SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) });
       const data = await res.json();
-      showSuccess(data.memberId || 'LIM-XXXX');
-    } catch (err) { showSuccess('LIM-DEMO'); }
+      showSuccess(data.memberId || 'LJSMS-XXXX');
+    } catch (err) { showSuccess('LJSMS-DEMO'); }
   } else {
     await new Promise(r => setTimeout(r, 1200));
-    showSuccess('LIM-DEMO');
+    showSuccess('LJSMS-DEMO');
   }
 }
 
